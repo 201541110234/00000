@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main()
+{
+	int n;
+	void pr(int n);
+	printf("n");
+	scanf("%d",&n);
+	pr(n);
+}
+void pr(int n)
+{
+	int i,j;
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n-1;j++)
+			printf(" ");
+		for(j=1;j<=i;j++)
+			printf("%2d",i);
+		printf("\n");
+	}
+}
